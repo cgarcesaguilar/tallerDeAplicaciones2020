@@ -1,0 +1,111 @@
+* { 
+	border: 0; 
+	margin:0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+body {
+	background: #f5f5f5;
+	color: #3D8C9C;
+	font-family: sans-serif;
+}
+header {
+	background-color: #0F0F0F;
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	padding: 10px 0;
+}
+header h1, header nav {
+	vertical-align: middle;
+	display: inline-block;
+	width: 30%;
+	text-align: left;
+}
+header nav {
+	text-align: right;
+	width: 65%;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	width: 19%;
+	background-color: #F26E38;
+	text-align: center;
+}
+nav ul li a {
+	display: block;
+	padding: 8px 0;
+	text-decoration: none;
+	color: #fff; 
+}
+section.portada {
+	background: url(../img/agencia-web-portada.jpeg);
+	padding: 200px 100px;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+}
+section.portada h1 {
+	font-size: 70px;
+	color: #fff;
+	background-color: rgba(0,0,0, 0.5);
+}
+section.portada h3 {
+	margin-top: 30px;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+section.portada a {
+	display: inline-block;
+	background-color: #F26E38;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+section.suscripcion {
+	text-align: center;
+	padding: 60px 100px;
+}
+section.suscripcion h1 {
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+section.suscripcion p {
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+section.suscripcion form input, section.suscripcion form button {
+	width: 60%;
+	padding: 10px;
+	display: inline-block;
+	font-size: 18px;
+	border: 2px dashed #dcdde2;
+	border-radius: 20px;
+	font-style: italic;
+}
+section.suscripcion form button {
+	width: 20%;
+	border: 0;
+	border-radius: 0;
+	font-style: normal;
+	background-color: #FCE008;
+	border: 2px solid #FCE008;
+	color: #333;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: linear all 300ms;
+}
+section.suscripcion form button:hover {
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	transition: linear all 300ms;
+}
