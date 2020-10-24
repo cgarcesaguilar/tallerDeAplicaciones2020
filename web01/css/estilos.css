@@ -10,11 +10,12 @@ body {
 	font-family: sans-serif;
 }
 header {
-	background-color: #0F0F0F;
+	background-color: rgba(0,0,0, 1);
 	width: 100%;
 	text-align: center;
 	height: 60px;
 	padding: 10px 0;
+	position: fixed;
 }
 header h1, header nav {
 	vertical-align: middle;
@@ -47,6 +48,7 @@ section.portada {
 	text-align: center;
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 }
 section.portada h1 {
 	font-size: 70px;
@@ -68,16 +70,17 @@ section.portada a {
 	margin-top: 20px;
 	text-transform: uppercase;
 }
-section.suscripcion {
+section.suscripcion, section.distintivos {
 	text-align: center;
 	padding: 60px 100px;
+	background: #f5f5f5;
 }
-section.suscripcion h1 {
+section.suscripcion h1, section.distintivos h1 {
 	font-family: 'Sansita Swashed', cursive;
 	font-size: 40px;
 	margin-bottom: 10px;
 }
-section.suscripcion p {
+section.suscripcion p, section.distintivos p {
 	font-size: 20px;
 	font-style: italic;
 	margin-bottom: 20px;
@@ -108,4 +111,69 @@ section.suscripcion form button:hover {
 	border: 2px solid #333;
 	color: #fff;
 	transition: linear all 300ms;
+}
+section.distintivos {
+	background-color: #fff;
+	color: #333;
+	margin-bottom: 180px;
+}
+section.distintivos .item {
+	display: inline-block;
+	width: 30%;
+	height: 300px;
+	padding: 80px 10px;
+	margin: 0 10px;
+	vertical-align: top;
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	transition: linear all 300ms;
+}
+section.distintivos .item:hover {
+	transform: scale(1.1);
+	transition: linear all 300ms;
+}
+.item i {
+	font-size: 70px;
+	color: #3D8C9C;
+	margin-bottom: 20px;
+}
+.btnIrAlCielo {
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transition: linear all 300ms;
+}
+.btnIrAlCielo:hover {
+	transform: scale(1.1);
+	transition: linear all 300ms;
+}
+footer {
+	width: 100%;
+	background-color:#1c1c1c;
+	color: #fff;
+	padding: 30px 100px;
+	position: fixed;
+	bottom: 0;
+	z-index: -1000;
+}
+.footerLogo, .footerMenu {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+.footerMenu {
+	text-align: right;
+}
+.footerMenu ul {
+	list-style: none;
+}
+.footerMenu ul li a {
+	text-decoration: none;
+	color: #adb5bd;
+	line-height: 25px;
 }
