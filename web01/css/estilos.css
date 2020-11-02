@@ -27,6 +27,15 @@ header nav {
 	text-align: right;
 	width: 65%;
 }
+header button {
+	display: none;
+	background: #c3c5c5;
+	padding: 10px;
+	color: #333;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
 nav ul {
 	list-style: none;
 }
@@ -70,7 +79,7 @@ section.portada a {
 	margin-top: 20px;
 	text-transform: uppercase;
 }
-section.suscripcion, section.distintivos {
+section.suscripcion, section.distintivos, section.servicios {
 	text-align: center;
 	padding: 60px 100px;
 	background: #f5f5f5;
@@ -176,4 +185,74 @@ footer {
 	text-decoration: none;
 	color: #adb5bd;
 	line-height: 25px;
+}
+
+/*ESTILOS SECCION SERVICIOS */
+section.servicios {
+	padding-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.imgMediana, .imgGrande {
+
+	width: 32.5%;
+	box-shadow: 0 0 5px #333;
+}
+.imgGrande {
+	margin-top: 15px;
+	width: 48.5%;
+}
+.imgMediana img, .imgGrande img {
+	width: 100%;
+}
+
+@media (max-width: 950px ) {
+	section.distintivos .item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 760px) {
+	section.suscripcion form input, 
+	section.suscripcion form button {
+		width: 100%;
+		border-radius: 20px 20px 0 0;
+	}
+	section.suscripcion form button {
+		border-radius: 0 0 20px 20px;
+	}
+	header nav {
+		display: none;
+	}
+	header button {
+		display: inline-block;
+
+	}
+	.imgMediana, .imgGrande {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+
+}
+@media (max-width: 650px) {
+	section.portada {
+		padding: 100px 30px;
+	}
+	header h1 {
+		width: 50%;
+	}
+}
+@media (max-width: 560px ) {
+	section.distintivos, section.suscripcion {
+		padding: 50px 20px;
+	} 
+	footer {
+		padding: 30px;
+	}
+	section.portada h3 {
+		display: none;
+	}
 }
